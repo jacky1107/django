@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding for interaction and visualization</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+    {% block bubbleSorting %} {% endblock %}
+    {% block quickSorting %} {% endblock %}
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo"> Jacky </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/products/bubbleSorting/">bubbleSorting</a></li>
+                <li><a href="/products/quickSorting/">quickSorting</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="array-container"></div>
+
+</body>
+
+</html>

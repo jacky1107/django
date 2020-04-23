@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+
+{% block p5 %}
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+<script src="{% static 'main.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block content %}
+<form action="." method="POST">{% csrf_token %}
+    {{ forms.as_p }}
+    <input type="submit" name="run" value="run python"/>
+</form>
+{% endblock %}
