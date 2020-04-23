@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding for interaction and visualization</title>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+    {% block kmeans %} {% endblock %}
+    {% block bubbleSorting %} {% endblock %}
+    {% block quickSorting %} {% endblock %}
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800" />
+    <link rel="stylesheet" href="{% static 'css/home/base.css' %}" type="text/css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner-header">
+            <div class="logo-container">
+                <h1>JK<span>WEB</span></h1>
+            </div>
+
+            <ul class="navigation">
+                <a id="home" href="/">
+                    <li>Home</li>
+                </a>
+                <a id="project" href="/products/">
+                    <li>Project</li>
+                </a>
+                <a id="about" href="#">
+                    <li>About</li>
+                </a>
+                <a id="contact" href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    {% block paragraph %}{% endblock %}
+    {% block javascript %}{% endblock %}
+    <div id="array-container"></div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{% extends "home.html" %}
+
+{% block bubbleSorting %}
+{% load static %}
+<script src="{% static 'js/bubbleSorting/bubble.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block javascript %}
+<div class="interaction">
+    <div class="inner-interaction">
+        <div id="slider">
+            <div class="start">
+                <a href="#" id="start-tag">START</a>
+            </div>
+
+            <ul class="interact">
+                <a id="quickSorting" href="../quickSorting/">
+                    <li>Quick Sort</li>
+                </a>
+                <a id="bubbleSorting" href="../bubbleSorting/">
+                    <li>Bubble Sort</li>
+                </a>
+                <a id="about" href="#">
+                    <li>Merge Sort</li>
+                </a>
+                <a id="contact" href="#">
+                    <li>Heap Sort</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

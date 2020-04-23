@@ -1,0 +1,9 @@
+{% extends 'home.html' %}
+
+{% block paragraph %}
+
+{% for productName in obj %}
+    <p><a href="{{ productName.getAbsoluteURL }}" >{{ productName.id }} - {{ productName.description }}</a></p>
+{% endfor %}
+
+{% endblock %}
